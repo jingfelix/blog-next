@@ -23,7 +23,7 @@ export function ArticleDetail({ post }: ArticleDetailProps) {
           
           <div className="flex items-center justify-between pt-6 pb-10 border-b border-border/30">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 bg-muted rounded-2xl flex items-center justify-center border border-border/30">
+              <div className="w-14 h-14 bg-muted rounded-full flex items-center justify-center border border-border/30">
                 <span className="text-base" style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: '600' }}>
                   {post.author.split(' ').map(n => n[0]).join('')}
                 </span>

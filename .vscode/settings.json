@@ -1,0 +1,10 @@
+{
+  // Treat plain .css files as PostCSS so editor understands at-rules used by Tailwind/PostCSS plugins
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  // Disable CSS unknown at-rules linting (handled by PostCSS/Tailwind during build)
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore"
+}

@@ -14,7 +14,7 @@ export function Header({ onBackToHome, showBackButton = false }: HeaderProps) {
             {showBackButton && onBackToHome && (
               <button
                 onClick={onBackToHome}
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-[-2px] bg-muted/50 px-3 py-2 rounded-full border border-border/30"
+                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-all duration-300 hover:translate-x-[-2px] bg-muted/50 px-3 py-2 rounded-full"
                 style={{ fontFamily: 'Crimson Text, Georgia, serif' }}
               >
                 <ArrowLeft className="w-4 h-4" />
@@ -37,13 +37,13 @@ export function Header({ onBackToHome, showBackButton = false }: HeaderProps) {
             >
               About
             </a>
-            <a 
+            {/* <a 
               href="#" 
               className="text-muted-foreground hover:text-foreground transition-all duration-300 px-4 py-2 rounded-full hover:bg-muted/30"
               style={{ fontFamily: 'Crimson Text, Georgia, serif' }}
             >
               Archive
-            </a>
+            </a> */}
           </nav>
         </div>
       </div>
