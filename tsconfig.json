@@ -19,7 +19,7 @@
     "sourceMap": false,
     // "declaration": true,
     // "declarationMap": true,
-    "noEmit": true,
+    "noEmit": false,
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": false,

@@ -206,3 +206,133 @@
 html {
   font-size: var(--font-size);
 }
+
+/* Code highlighting styles */
+.hljs {
+  background: var(--muted) !important;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+  color: #dc2626;
+}
+
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp {
+  color: #059669;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #7c3aed;
+}
+
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type {
+  color: #ea580c;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+  color: #2563eb;
+}
+
+.hljs-built_in,
+.hljs-deletion {
+  color: #dc2626;
+}
+
+.hljs-formula {
+  background: var(--muted);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+/* Prose styling for markdown content */
+.prose {
+  color: var(--foreground);
+}
+
+.prose h1 {
+  color: var(--foreground);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+}
+
+.prose h2 {
+  color: var(--foreground);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+}
+
+.prose h3 {
+  color: var(--foreground);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+}
+
+.prose p {
+  color: var(--foreground);
+  font-family: 'Crimson Text', Georgia, serif;
+}
+
+.prose strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.prose code {
+  background: var(--muted);
+  color: var(--foreground);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.prose pre {
+  background: var(--muted);
+  color: var(--foreground);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.prose blockquote {
+  border-left: 4px solid var(--border);
+  color: var(--muted-foreground);
+  font-style: italic;
+  padding-left: 1rem;
+}

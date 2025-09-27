@@ -1,8 +1,8 @@
-import { BlogPost } from '../types/blog';
+import { PostData } from '../utils/markdown';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 interface ArticleDetailProps {
-  post: BlogPost;
+  post: PostData;
 }
 
 export function ArticleDetail({ post }: ArticleDetailProps) {

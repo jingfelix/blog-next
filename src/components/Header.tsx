@@ -21,9 +21,12 @@ export function Header({ onBackToHome, showBackButton = false }: HeaderProps) {
                 Back
               </button>
             )}
-            <h1 
+            <h1
               className="cursor-pointer hover:text-muted-foreground transition-colors text-2xl"
-              onClick={onBackToHome}
+              onClick={() => {
+                window.history.pushState({}, '', '/');
+                window.dispatchEvent(new PopStateEvent('popstate'));
+              }}
               style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: '600' }}
             >
               The Literary Gazette

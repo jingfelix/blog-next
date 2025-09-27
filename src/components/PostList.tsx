@@ -1,9 +1,9 @@
-import { BlogPost } from '../types/blog';
+import { PostData } from '../utils/markdown';
 import { BlogPostCard } from './BlogPostCard';
 
 interface PostListProps {
-  posts: BlogPost[];
-  onPostClick: (post: BlogPost) => void;
+  posts: PostData[];
+  onPostClick: (post: PostData) => void;
 }
 
 export function PostList({ posts, onPostClick }: PostListProps) {
